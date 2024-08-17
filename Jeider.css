@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
 }
@@ -9,13 +10,14 @@ body {
     width: 80%;
     max-width: 900px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #000000;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .profile-header {
     text-align: center;
+    color: #0073b1;
     border-bottom: 2px solid #ddd;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -23,14 +25,14 @@ body {
 
 .profile-img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
 }
 
-h1, h2, h3 {
-    color: #333;
+h1,h2, h3  {
+    color: #bb86fc;
 }
 
 .profile-section {
@@ -44,20 +46,20 @@ h1, h2, h3 {
     color: #0073b1;
 }
 
-.experience-item, .education-item {
-    margin-bottom: 15px;
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espacio entre los íconos */
+    margin-top: 20px;
 }
 
-.skills-list {
-    list-style-type: none;
-    padding: 0;
+.social-icons a svg {
+    width: 40px; /* Ajusta el tamaño del ícono */
+    height: 40px;
+    stroke: #ffffff; /* Color inicial del ícono */
+    transition: stroke 0.3s ease; /* Transición suave para el color */
 }
 
-.skills-list li {
-    background-color: #0073b1;
-    color: #fff;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 5px;
-    display: inline-block;
+.social-icons a:hover svg {
+    stroke: #520a83; /* Cambia el color al pasar el ratón */
 }
