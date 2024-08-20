@@ -54,8 +54,8 @@ h1,h2, h3  {
 }
 
 .social-icons a svg {
-    width: 40px; /* Ajusta el tamaño del ícono */
-    height: 40px;
+    width: 50px; /* Ajusta el tamaño del ícono */
+    height: 50px;
     stroke: #ffffff; /* Color inicial del ícono */
     transition: stroke 0.3s ease; /* Transición suave para el color */
 }
