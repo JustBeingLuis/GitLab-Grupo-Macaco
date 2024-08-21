@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color:  #bb86fc;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos estén en fila */
+    justify-content: center; /* Alinea el contenido hacia la izquierda */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 40px;
+    padding-left: 200px;
+    padding-right:200px;
+}
+
+.jhon-descripcion {
+    width: 60%; /* Establece el ancho de la sección de texto */
+    text-align: justify; /* Alinea el texto a la izquierda */
+    align-self: flex-start;
+    padding-right: 40px;;
+    font-size: 120%;
+}
+
+.jhon-foto{
+    width: 100%;
+    margin-right: -800px;
+    margin-left: 200px;
+}
+    
+.jhon-foto img{
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: top 20px; ;
+    border: 3px solid #ffffff; /* Borde de color con grosor de 5px */
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px; /* Espacio entre los íconos */
+    margin-top: 20px;
+}
+
+.social-icons a svg {
+    width: 60px; /* Ajusta el tamaño del ícono */
+    height: 60px;
+    margin:0 10px ;
+    stroke: #bb86fc; /* Color inicial del ícono */
+    transition: stroke 0.3s ease; /* Transición suave para el color */
+    cursor: pointer;
+    
+}
+
+.social-icons a:hover svg {
+    stroke: #ffffff; /* Cambia el color al pasar el ratón */
+}
+
+
+
+h2 {
+    margin-top: 0;
+    color: #bb86fc; /* Color para los títulos */
+}
+
+p {
+    color: #e0e0e0;
+}
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
