@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos estén en fila */
+    justify-content: center; /* Alinea el contenido hacia la izquierda */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 40px;
+    padding-left: 200px;
+    padding-right:200px;
+}
+
+.bio-photo {
+    width: 30%; /* Establece el ancho de la sección de la foto */
+    margin-right: 20px; /* Añade espacio a la derecha de la imagen */
+}
+
+.bio-content {
+    width: 60%; /* Establece el ancho de la sección de texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+    align-self: flex-start;
+    padding-right: 40px;
+}
+
+.bio-photo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin-top: 0;
+    color: #bb86fc;
+}
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espacio entre los íconos */
+    margin-top: 20px;
+}
+
+.social-icons a svg {
+    width: 40px; /* Ajusta el tamaño del ícono */
+    height: 40px;
+    stroke: #bb86fc; /* Color inicial del ícono */
+    transition: stroke 0.3s ease; /* Transición suave para el color */
+}
+
+.social-icons a:hover svg {
+    stroke: #ffffff; /* Cambia el color al pasar el ratón */
+}
