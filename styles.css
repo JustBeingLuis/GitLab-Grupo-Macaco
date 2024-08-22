@@ -11,6 +11,18 @@ header {
     margin-bottom: 40px;
 }
 
+.animated-title {
+    font-size: 2.5em;
+    color: #bb86fc;
+    opacity: 0; /* Comienza completamente invisible */
+    animation: fadeIn 3s ease-in-out forwards;
+    text-shadow: 0 0 1px #ffffff, 0 0 5px #bb86fc, 0 0 15px #bb86fc;
+}
+.description {
+    font-size: 1em;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
 .container {
     display: flex;
     flex-direction: column; 
@@ -19,23 +31,48 @@ header {
     
 }
 
-.item {
+.item-left {
     background-color: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 30%;
-    margin: 10px 0; /* Añade margen vertical entre los elementos */
+    margin: 10px 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateX(-100%); /* Comienza fuera de la pantalla, hacia la izquierda */
+    animation: slideInFromLeft 1s ease-in-out forwards;
 }
 
-.item h2 {
+.item-right {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 30%;
+    margin: 10px 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateX(-100%); /* Comienza fuera de la pantalla, hacia la izquierda */
+    animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+.item-left, .item-right h2 {
     margin-top: 0;
     color: #bb86fc; /* Color para los títulos */
 }
 
-.item p {
+.item-left, .item-right p {
     color: #bb86fc;
+}
+
+/* Item hovers */
+.item-left:hover,
+.item-right:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.8), 0 0 20px rgba(187, 134, 252, 0.8);
 }
 
 a {
@@ -46,3 +83,38 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* KEYFRAMES*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
